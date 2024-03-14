@@ -1,0 +1,130 @@
+1)
+
+
+
+void main() {
+  String nombre = 'hola brian';
+  print(nombre);
+}
+--------------
+void main() {
+  var edad = 'tienes: 18 años';
+  print(edad);
+}
+------------------
+void main() {
+  String ciudad = 'Lima';
+  print('Vivo en $ciudad');
+}
+------------------
+void main() {
+  int edad = 20;
+  print('La edad es: $edad');
+}
+----------------
+
+void main() {
+  var altura = 1.65;
+  print('La altura es: $altura');
+}
+3-------
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+  print(numeros);
+}
+--------------
+void main() {
+  List<String> colores = ['rojo', 'verde', 'azul'];
+  print(colores);
+}
+------------------
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+  print(numeros[0]);
+}
+.---------------
+void main() {
+  List<String> colores = ['rojo', 'verde', 'azul'];
+  print(colores[1]);
+}
+---------
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+  List<String> colores = ['rojo', 'verde', 'azul'];
+
+  numeros.add(6);
+  colores.add('amarillo');
+
+  print(numeros);
+  print(colores);
+}
+-----------
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+
+  for (int numero in numeros) {
+    print(numero);
+  }
+}
+----------
+void main() {
+  List<String> colores = ['rojo', 'verde', 'azul', 'amarillo'];
+
+  for (String color in colores) {
+    print(color);
+  }
+}
+b-----------
+void main() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'ciudad': 'Madrid',
+  };
+}
+-------
+
+void main() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'ciudad': 'Madrid'
+  };
+
+  persona['profesion'] = 'ingeniero';
+}
+
+----------
+void main() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'ciudad': 'Madrid'
+  };
+
+  print(persona['nombre']);
+}
+----------
+void main() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'ciudad': 'Madrid'
+  };
+
+  print(persona['edad']);
+}
+-----------------
+void main() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 35,
+    'ciudad': 'Madrid',
+    'profesion': 'ingeniero'
+  };
+
+  persona.forEach((key, value) {
+    print('$key: $value');
+  });
+}
+
